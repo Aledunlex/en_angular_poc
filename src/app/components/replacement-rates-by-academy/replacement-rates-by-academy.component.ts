@@ -6,7 +6,9 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-replacement-rates-by-academy',
   standalone: true,
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+  ],
   templateUrl: './replacement-rates-by-academy.component.html'
 })
 export class ReplacementRatesByAcademyComponent {

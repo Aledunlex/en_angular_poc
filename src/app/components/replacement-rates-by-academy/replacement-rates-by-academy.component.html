@@ -1,21 +1,27 @@
-<div>
-  <h2>Données de remplacements par académie (1er degré)</h2>
-  <table>
-    <thead>
-      <th>Académie</th>
-      <th>Département</th>
-      <th>Code département</th>
-      <th>% Taux de remplacement (département)</th>
-      <th>% Taux de remplacement (académie)</th>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of ratesData">
-        <td>{{ item.libelle_academie }}</td>
-        <td>{{ item.departement }}</td>
-        <td>{{ item.code_departement }}</td>
-        <td>{{ item.taux_moyen_par_departement_d_efficacite_du_remplacement_et_de_la_suppleance_dans_le_premier_degre }}</td>
-        <td>{{ item.taux_moyen_par_academie_d_efficacite_du_remplacement_et_de_la_suppleance_dans_le_premier_degre }}</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="container">
+  <div class="card">
+    <div class="card-body text-center">
+      <h5 class="card-title">Données de remplacements par académie (1er degré)</h5>
+    </div>
+    <div class="table-responsive">
+      <table class="table">
+        <thead class="thead-light">
+          <th>Académie</th>
+          <th>Département</th>
+          <th>Code dép.</th>
+          <th>Taux de remplacement (dép.)</th>
+          <th>Taux de remplacement (ac.)</th>
+        </thead>
+        <tbody class="customtable">
+          <tr *ngFor="let item of ratesData">
+            <td>{{ item.libelle_academie }}</td>
+            <td>{{ item.departement }}</td>
+            <td>{{ item.code_departement }}</td>
+            <td>{{ item.taux_moyen_par_departement_d_efficacite_du_remplacement_et_de_la_suppleance_dans_le_premier_degre }}</td>
+            <td>{{ item.taux_moyen_par_academie_d_efficacite_du_remplacement_et_de_la_suppleance_dans_le_premier_degre }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
